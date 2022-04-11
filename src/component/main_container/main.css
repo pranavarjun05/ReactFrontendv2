@@ -1,0 +1,14 @@
+.grid_container{
+    width: 92%;
+    height: 95%;
+    padding-right: 2%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows:53% 44%;
+    margin: 1rem auto;
+}
+.grid_item{
+    border: 2px solid ;
+    border-radius: 7px;
+}

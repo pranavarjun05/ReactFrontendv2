@@ -1,0 +1,43 @@
+.FirstTab p,
+.SecondTab p {
+  font-size: 2rem;
+  text-align: center;
+}
+.Appointment-Box-grid{
+  display: grid;
+  grid-template-columns: 18% 18% 60%;
+  grid-auto-rows: 70px ;
+  grid-row-gap: 20px;
+  grid-column-gap: 8px;
+  background-color: var(--innerColor);
+  margin: 1.5rem 2rem;
+}
+.Appointment-date{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.Appointment-Box__last{
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr;
+}
+.Appointment-Box__last h3 {
+  font-size: small;
+  color: rgb(98, 96, 96);
+  font-weight: 600;
+}
+.Appointment-Box__last div:not(:last-child) {
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.Appointment-Box__last div:last-child{
+  display: flex;
+  align-items: center;
+  justify-content:  space-evenly;  
+  color: var(--blueColor);
+  cursor: pointer;
+}

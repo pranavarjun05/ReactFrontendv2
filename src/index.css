@@ -1,0 +1,20 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --outerColor: #dee3e9;
+  --innerColor: #fff;
+  --blueColor : #0d53fc;
+  font-family: 'Anek Odia', sans-serif;
+}
+
+a{
+  text-decoration:  none;
+}
+#root{
+  background: var(--outerColor);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: scroll;
+}

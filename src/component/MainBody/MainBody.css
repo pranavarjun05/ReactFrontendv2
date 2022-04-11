@@ -1,0 +1,48 @@
+.mainBody{
+  flex-grow: 1;
+  /* transition-property: all; */
+  margin-left: 18vw;
+  /* transition-delay: 1s; */
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  width: 82vw;
+  background-color: rgb(236, 241, 246);
+  overflow: scroll;
+  height: 90vh;
+}
+.mainBodyStrech{
+  width: 100vw;
+}
+
+.navtree{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding : 0.3em 3em;
+  border-bottom: 1px solid slategray;
+}
+
+.navtree > div{
+  display: flex;
+  gap:0.3em;
+  color : rgb(112, 134, 157);
+}
+
+.navtree > div > span{
+  color : blue;
+  font-weight: bold;
+}
+
+#edit {
+  display: flex;
+  gap: 0.2em;
+  border: 2px solid rgb(169 171 172);
+  border-radius:0.2em;
+  padding: 0.3em;
+  font-size: small;
+}
+
+#edit img{
+  width: 15px;
+}
+

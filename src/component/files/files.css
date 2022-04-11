@@ -1,0 +1,45 @@
+.File__section{
+    background-color: var(--innerColor);
+    height: 100%;
+}
+.Files__head{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+.Files__head>button{
+    color: var(--blueColor);
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+.fileList__container{
+    margin-top: 5px;
+    padding: 0.5rem 2rem;
+}
+.fileList__container ul{
+    list-style: none;
+    width: 100%;
+    padding-left: 10px;   
+}
+.fileList__container ul li{
+    border: 0.8px solid var(--outerColor);
+    margin-top: 5px;
+    margin-top: 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px ;
+}
+.fileList__container ul li >a{
+    margin-left: 2rem;
+    margin-right: 10rem;
+    cursor: pointer;
+}
+.fileList__container ul li >a:hover{
+    color: var(--blueColor);
+}
+
+.fileList__container i {
+    color: rgb(76, 75, 75);
+}

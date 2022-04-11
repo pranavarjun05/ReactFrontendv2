@@ -1,0 +1,147 @@
+/* left side of patient info */
+.patient_info{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.patient_info_left{
+    flex: .35;
+    margin-right: 5px;
+    background: var(--innerColor);
+    padding: 5px 0.8rem;
+    border-radius: 3px;
+}
+.patient_info_right{
+    flex: .65;
+    background: var(--innerColor);
+}
+.patient_image{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: #dce0e9;
+    margin: auto;
+    margin-top: 0.8rem;
+}
+
+.patient_image > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.name_heading{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.5%;
+    margin-top: 1.5%;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+}
+.lightText{
+    font-size: medium;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(100, 100, 100)
+}
+.visit_status{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.6rem;
+}
+.visit_status>div:not(last-child){
+    font-size: larger;
+    font-weight: 700;
+    text-align: center;
+}
+.patient_info_left button{
+    padding: 7px 12px;
+    width: 76%;
+    margin-left: 12%;
+    margin-top: 0.6rem;
+    background-color: var(--innerColor);
+    font-weight: 600;
+    border: 1px solid #4b4b4b;
+    box-shadow: 0.7px 0.7px 0.7px rgb(94, 95, 95);
+    cursor: pointer;
+}
+.patient_info_left button:hover{
+   opacity: 0.9;
+   background-color: #1e5df5;
+   color: #fff;
+}
+.line{
+    width: 3px;
+    background-color: gray;
+    height: 30px;
+    border-radius: 3px;
+}
+
+/* right side of patient info */
+.patient_info_right{
+    height: 100%;
+    padding: 0.8rem 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    place-content: center;
+    border-radius: 3px;
+}
+.patient_info_rigt_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.patient_info_rigt_item div p:last-child{
+    margin-top: 0.3rem;
+    font-size: 0.95rem;
+    color: #111;
+    text-align: start;
+
+}
+
+@media only screen and (max-width: 1150px) {
+    
+    .patient_info_left button{
+        padding: 4px 5px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 0.3rem;
+    }
+    .name_heading{
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+        margin-top: 0.1rem;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+    }
+  }
+  @media only screen and (max-width: 1500px){
+    .patient_info_left{
+        padding: 5px 0.5rem;
+    }
+    .name_heading{
+        font-size: 1.3rem;
+        margin-bottom: 1.5% ;
+        margin-top: 1%;
+    }
+    .patient_info_left button{
+        padding: 4px 7px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 0.3rem;
+    }
+    .visit_status>div p :not(last-child){
+        font-size: 1rem;
+
+    }
+    .lightText{
+       margin-top: -0.4rem;
+    }
+    .visit_status{
+        margin-top: -0.2rem;
+    }
+  }

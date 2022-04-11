@@ -1,0 +1,93 @@
+/* Tab Container */
+.Tabs {
+    width: 100%;
+    height: 100%;
+    background: var(--innerColor);
+    padding: 0.5rem 1rem;
+    color: #111;
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+   }
+   
+   /* Tab Navigation */
+   ul.nav {
+    width: 88%;
+    margin-left: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--outerColor);
+    border-radius: 0.4rem;
+    padding: 4px 7px;
+   }
+   ul.nav li {
+    width: 33%;
+    padding: 6px 1px;
+    list-style: none;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(86, 86, 86);
+    cursor: pointer;
+    transition: all 0.7s;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+   }
+  
+   ul.nav li:hover {
+     background: rgba(50, 224, 196, 0.15);
+   }
+   ul.nav li.active {
+     background: var(--innerColor);
+     color: var(--blueColor);
+   }
+   
+   .appointment__info{
+    margin: 0.5rem 0.5rem;
+    height: 120%;
+     background-color: var(--outerColor);
+   }
+   .appointment__info>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    color: #111;
+    font-weight: 600;
+   }
+   .appointment__info>div>button{
+    background-color: var(--innerColor);
+    padding: 8px 10px;
+    color: rgb(91, 84, 84);
+    border: 0.2px rgb(69, 64, 64);
+   }
+   .appointment__info>div:nth-child(2){
+    width: 100%;
+    /* margin-left: 2.5%; */
+    height: 1px;
+    background-color: rgb(69, 68, 68);
+    opacity: 0.6;
+   }
+   .outlet{
+     margin-bottom: 1rem;
+   }
+
+   .Tabs::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  .Tabs::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .Tabs::-webkit-scrollbar-thumb {
+    background: slategray;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  .Tabs::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
